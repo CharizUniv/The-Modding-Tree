@@ -184,7 +184,7 @@ addLayer("energy", {
                 return "Double Generation"
             },
             cost() {
-                var price = new Decimal(1e8)
+                var price = new Decimal(1e7)
 
                 return price
             },
