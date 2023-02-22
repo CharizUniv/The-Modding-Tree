@@ -1,3 +1,5 @@
+var testTree = [["p"],
+["g"]]
 
 // A side layer with achievements, with no prestige
 addLayer("a", {
