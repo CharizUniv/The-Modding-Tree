@@ -1607,9 +1607,11 @@ function getGeneratorDescription(genID, genCount, purchaseLimit, cost) {
     if (!inChallenge("surge", 12)) {
         generationText += "<br>Production: " + format(buyableEffect("energy", genID)) + "/s"
     }
-    generationText += "<br>Effect: " + format(genCount.add(1))
     if (genID == 11) {
-        generationText += " energy/s"
+        generationText += "<br>Effect: " + format(genCount) + " energy/s"
+    }
+    else {
+        generationText += "<br>Effect: " + format(genCount.add(1))
     }
     if (genID == 12 || genID == 13) {
         generationText += "x energy/s"
